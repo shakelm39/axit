@@ -121,6 +121,7 @@ section{
    top: 2rem;
    float:right;
    right: 4rem;
+   display: none;
  }
  .overlay{
    width: 0;

@@ -13,7 +13,7 @@
      .menu{
         display: none;
      }
-     .ham-menu{
+     .ham-menu span i{
         display: block;
      }
      
