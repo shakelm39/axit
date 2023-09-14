@@ -1,4 +1,9 @@
-
+/*
+Template Name : Axit
+Template URI: https://github.com/shakelm39/axit.git
+Author: Shakel
+Version : 1.0
+ Description : A simple free html css template  */
 
 /*===============*/
 /* Common Css */
@@ -6,7 +11,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 
 html{
@@ -17,6 +22,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
+    
 }
 
 /*===============*/
@@ -33,14 +39,13 @@ a, a:hover{
     margin: 0 auto;
 }
 section{
-    padding: 8rem 0;
+    padding: 6rem 0;
 }
 .section-title{
     text-align: center; 
  }
  .section-title h2{
     font-size: 4rem;
-    
  }
  .btn{
    color:#fff;
@@ -51,28 +56,30 @@ section{
    cursor: pointer;
    text-transform: capitalize;
    display: inline-block;
+   text-align: center;
  }
+ 
  /* HEADER  */
  #hero{
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-    
+   width: 100%;
+   position: relative;
+   height: auto;
+   overflow: hidden; 
  }
  #hero-bg{
     background: url(img/hero-bg.png)no-repeat center /cover;
-    
+     
  }
  /* NAVIGATION  */
  nav{
    position: inherit;
+    width: 100%;
     z-index:1;
     background: #000;
     overflow: hidden;
  }
  .logo{
     float:left;
-    
  }
  .logo a{
     color:#fff;
@@ -105,19 +112,59 @@ section{
  .menu li a:hover{
     color:#fff;
  }
+ /* hum menu  */
+ .ham-menu span i{
+   color:#fff;
+   font-size: 4rem;
+   cursor: pointer;
+   position: fixed;
+   top: 2rem;
+   float:right;
+   right: 4rem;
+ }
+ .overlay{
+   width: 0;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index:1;
+   overflow-X: hidden;
+   background: rgba(0, 0, 0, 0.9);
+   transition:.5s;
+ }
+ .overlay-content{
+   position: relative;
+   top: 15%;
+   width: 100%;
+   text-align: center;
+  
+ }
+ .overlay a{
+   text-decoration: none;
+   display: block;
+   font-size: 3rem;
+   color:#fff;
+   text-transform: uppercase;
+   line-height: 1.5;
+   padding: 1rem 0;
+ }
+ .closeBtn{
+   position: absolute;
+   top: 2.5rem;
+   right: 15rem;
+ }
  .hero-grid{
-    display: grid;
-    grid-template-columns:1fr 1fr;
-    gap: 1rem;
-    height: auto;
-    padding-top: 5rem;
-    overflow: hidden;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap:1rem;
+   padding: 0 6rem;
  }
  .hero-grid-item{
-    padding: 5rem 4rem;
+   margin-top: 7rem;
  }
  .hero-title{
-    padding: 0 7rem;
+    padding: 0 7rem; 
  }
  .hero-title h1{
     color:#fff;
@@ -141,10 +188,10 @@ section{
    display: block;
    background-color: #fff;
    margin-top: 3rem;
-
  }
  .hero-content{
    margin-left: 8rem;
+   
  }
  .little-description{
    color:#6b6869;
@@ -229,7 +276,7 @@ form{
 /*===============*/
 .hero-social-content{
    background: #fff;
-   height: 10rem;
+   height: 12rem;
    border-bottom:.2rem solid #b7b7b7;
    overflow: hidden;
 }
@@ -241,12 +288,10 @@ form{
 }
 .social-content h3{
    color:#333;
-   
 }
 .social-content p{
    color:#c8c9ca;
-   font-size: 1.4rem;
-   
+   font-size: 1.4rem; 
 }
 .hero-social-icon{
    float: left;
@@ -277,7 +322,6 @@ form{
 /*========================*/
 #transition-effect{
    background: #ddd;
-  
 }
 .effect-grid{
    display: grid;
@@ -298,7 +342,6 @@ form{
    border:none;
    border-bottom:.01rem solid #fff;
    width: 10rem;
-   
 }
 .tabcontent{
    overflow: hidden;
@@ -313,13 +356,11 @@ form{
     width: 80%;
 }
 .effect-content h3{
-  font-size: 2rem;
-  
+  font-size: 2rem; 
 }
 .little-description{
    padding-left: 0;
-   font-size: 1.4rem;
-   
+   font-size: 1.4rem; 
 }
 .effect-content{
    float: left;
@@ -501,8 +542,7 @@ form{
    margin-bottom: 2rem;
 }
 .awesome-content p{
-   font-size: 1.4rem;
-   
+   font-size: 1.4rem; 
 }
 .awesome-grid-item:first-child
 {
@@ -575,8 +615,7 @@ form{
 }
 .price span{
    font-size: 5rem;
-   font-weight: 900;
-   
+   font-weight: 900;  
 }
 
 .hetr{
@@ -594,7 +633,7 @@ form{
   height: 17rem;
 }
 /*===========================*/
-/* Pricing section */
+/* Client section */
 /*===========================*/
 
 .client-section-title{
@@ -617,15 +656,18 @@ form{
 .client-grid{
    display: grid;
    grid-template-columns: repeat(3, 1fr);
-   gap:1rem;
-   width: 90%;
+   width: 100%;
    margin: auto;
    margin-top: 3rem;
+}
+
+.client-grid-content{
+  padding: 0 4rem;
 }
 .message-box{
    position: relative;
    background: #f5f5f5;
-   width: 30rem;
+   width: 35rem;
    padding: 2rem;
    font-size: 1.2rem;
    margin-bottom: 2rem;
@@ -692,8 +734,7 @@ form{
    font-size: 1.4rem; 
 }
 .style-btn{
-   margin-top: 2rem;
-   
+   margin-top: 2rem; 
 }
 .stylebtn{
    background: transparent;
@@ -704,7 +745,10 @@ form{
 }
 
 /* contact section  */
-
+.contact-section{
+   width:100%;
+   margin: auto;
+}
 .section-title h2{
    font-size: 3.6rem;
    font-weight: normal;
@@ -725,37 +769,37 @@ form{
    color:#ccc;
 }
 .contact-form{
-   width: 40%;
-   margin: auto;
-   margin-top: 4rem;
-}
-.contact-form form{
-   position: relative;
-   background: #fff;
-   width: 80%;
+   width: 100%;
    margin: auto;
    text-align: center;
 }
-.contact-form form input[type='text'],
-.contact-form form input[type='email']{
-   border:none;
-   outline:0;
-   border-bottom:.1rem solid #d6d6d6;
-   width: 100%;
-   margin-bottom: 1.5rem;
-   padding: 1rem;
+.contact-form form{
+   width: 80%;
+   margin: auto;
+   display: block;
 }
-.contact-form form textarea{
+.contact-form form input[type="text"],
+.contact-form form input[type="email"]{
    width: 100%;
-   border:none;
-   border-bottom:.1rem solid #d6d6d6;
+   margin: auto;
+   padding: 2rem;
+   margin-bottom: 1rem;
    outline:0;
-   
+   border:none;
+   border-bottom:.1rem solid #a9aaac;
+   font-size: 1.4rem;
 }
-
+form textarea{
+  width: 100%;
+  border:none;
+  border-bottom:.1rem solid #a9aaac;
+}
+form textarea::placeholder{
+   padding-left: 2rem;
+}
 .contact-btn{
    background: #ff8b38;
-   margin-top: 2rem;
+   margin-top: 4rem;
    border-radius:.5rem;
 }
 /* footer-section */

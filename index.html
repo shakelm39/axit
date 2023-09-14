@@ -22,64 +22,72 @@
 <body>
     <!-- header section start  -->
     <header id="hero">
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <a href="">Ax<span>it</span></a>
-                </div>
-                <div class="hero-menu">
-                    <ul class="menu">
-                        <li><a href="#">features</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">pricing</a></li>
-                        <li><a href="#">reviews</a></li>
-                        <li><a href="#">contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-            
-            <div class="container">
-                <div class="hero-grid" id="hero-bg">
-                    <div class="hero-grid-item">
-                        <div class="hero-title" data-uk-scrollspy="cls:uk-animation-slide-left;repeat:true">
-                            <h1> ax<span>it</span> </h1>
-                            <h2>MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h2>
-                        </div>
-                        <div class="hero-content" data-uk-scrollspy="cls:uk-animation-slide-left;repeat:true">
-                            <p class="little-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-                            accumsan et viverra justo commodo.</p>
-                            <div class="downloadbtn">
-                                <button type="submit" class="btn dlod-btn">Download</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hero-grid-item">
-                        <div class="hero-form" data-uk-scrollspy="cls:uk-animation-slide-right;repeat:true">
-                            <div class="hero-form-title">
-                                <h2>Try Your <span>FREE</span> Trial Today</h2>
-                            </div>
-                            <form action="#">
-                                <div class="form-group">
-                                    <input type="text" placeholder="Name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" placeholder="Password">
-                                </div>
-                                <div class="form-footer">
-                                    <span><a href="#">get started</a></span>
-                                </div>
-                            </form>
+        <nav uk-sticky="offset: 0">
+            <div class="logo">
+                <a href="">Ax<span>it</span></a>
+            </div>
+            <div class="hero-menu">
+                <ul class="menu">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#list-section">features</a></li>
+                    <li><a href="#awesome-section">about</a></li>
+                    <li><a href="#pricing">pricing</a></li>
+                    <li><a href="#client">reviews</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+                <div class="ham-menu">
+                    <span><i class="fa fa-bars" onclick="openNav()"></i></span>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()"><i class="fa fa-times"></i></a>
+                        <div class="overlay-content">
+                            <a onclick="closeNav()" href="#hero">Home</a>
+                            <a onclick="closeNav()" href="#list-section">features</a>
+                            <a onclick="closeNav()" href="#awesome-section">about</a>
+                            <a onclick="closeNav()" href="#pricing">pricing</a>
+                            <a onclick="closeNav()" href="#client">reviews</a>
+                            <a onclick="closeNav()" href="#contact">contact</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </nav>
+        <div class="hero-grid" id="hero-bg">
+            <div class="hero-grid-item">
+                <div class="hero-title" data-uk-scrollspy="cls:uk-animation-slide-left;repeat:true">
+                    <h1> ax<span>it</span> </h1>
+                    <h2>MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h2>
+                </div>
+                <div class="hero-content" data-uk-scrollspy="cls:uk-animation-slide-left;repeat:true">
+                    <p class="little-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                    euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                    accumsan et viverra justo commodo.</p>
+                    <div class="downloadbtn">
+                        <button type="submit" class="btn dlod-btn">Download</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-grid-item">
+                <div class="hero-form" data-uk-scrollspy="cls:uk-animation-slide-right;repeat:true">
+                    <div class="hero-form-title">
+                        <h2>Try Your <span>FREE</span> Trial Today</h2>
+                    </div>
+                    <form action="#">
+                        <div class="form-group">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <div class="form-footer">
+                            <span><a href="#">get started</a></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-    </header>
-    <div class="container">
         <div class="hero-social-content">
             <div class="social-content">
                 <h3>Social Media</h3>
@@ -92,14 +100,15 @@
                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                     <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                     <li><a href="#"><i class="fa fa-google"></i></a></li>
-                    <li><a href="#"><i class="fa fa-printerest"></i></a></li>
                 </ul>
             </div>
         </div>
-    </div>
+    </header>
+   
+    
     <!-- header section end  -->
     <!-- transition effect section  start-->
-    <section class="effect" id="transition-effect">
+    <section class="effect" id="effect">
         <div class="container">
             <div class="effect-grid">
                 <div class="effect-grid-item">
@@ -395,56 +404,62 @@
         <div class="container">
             <div class="client-grid">
                 <div class="client-grid-item">
-                    <div class="message-box">
-                        <p>Lorem ipsum dolor sit amet, 
-                            consectetur adipisicing elit. Doloribus 
-                            accusamus expedita repellat similique 
-                            odio aspernatur ex, architecto eaque 
-                            quo suscipit.</p>
-                    </div>
-                    <div class="client-content">
-                        <div class="client-image">
-                            <img src="resources/img/shakelkawsar.jpg" alt="img">
+                    <div class="client-grid-content">
+                        <div class="message-box">
+                            <p>Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit. Doloribus 
+                                accusamus expedita repellat similique 
+                                odio aspernatur ex, architecto eaque 
+                                quo suscipit.</p>
                         </div>
-                        <div class="role">
-                            <h4>Jeremy H.</h4>
-                            <span>Manager</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="client-grid-item">
-                    <div class="message-box">
-                        <p>Lorem ipsum dolor sit amet, 
-                            consectetur adipisicing elit. Doloribus 
-                            accusamus expedita repellat similique 
-                            odio aspernatur ex, architecto eaque 
-                            quo suscipit.</p>
-                    </div>
-                    <div class="client-content">
-                        <div class="client-image">
-                            <img src="resources/img/shakelkawsar.jpg" alt="img">
-                        </div>
-                        <div class="role">
-                            <h4>Jeremy W.</h4>
-                            <span>Manager</span>
+                        <div class="client-content">
+                            <div class="client-image">
+                                <img src="resources/img/shakelkawsar.jpg" alt="img">
+                            </div>
+                            <div class="role">
+                                <h4>Jeremy H.</h4>
+                                <span>Manager</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="client-grid-item">
-                    <div class="message-box">
-                        <p>Lorem ipsum dolor sit amet, 
-                            consectetur adipisicing elit. Doloribus 
-                            accusamus expedita repellat similique 
-                            odio aspernatur ex, architecto eaque 
-                            quo suscipit.</p>
-                    </div>
-                    <div class="client-content">
-                        <div class="client-image">
-                            <img src="resources/img/shakelkawsar.jpg" alt="img">
+                    <div class="client-grid-content">
+                        <div class="message-box">
+                            <p>Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit. Doloribus 
+                                accusamus expedita repellat similique 
+                                odio aspernatur ex, architecto eaque 
+                                quo suscipit.</p>
                         </div>
-                        <div class="role">
-                            <h4>Jeremy S.</h4>
-                            <span>Manager</span>
+                        <div class="client-content">
+                            <div class="client-image">
+                                <img src="resources/img/shakelkawsar.jpg" alt="img">
+                            </div>
+                            <div class="role">
+                                <h4>Jeremy W.</h4>
+                                <span>Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="client-grid-item">
+                    <div class="client-grid-content">
+                        <div class="message-box">
+                            <p>Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit. Doloribus 
+                                accusamus expedita repellat similique 
+                                odio aspernatur ex, architecto eaque 
+                                quo suscipit.</p>
+                        </div>
+                        <div class="client-content">
+                            <div class="client-image">
+                                <img src="resources/img/shakelkawsar.jpg" alt="img">
+                            </div>
+                            <div class="role">
+                                <h4>Jeremy S.</h4>
+                                <span>Manager</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -479,15 +494,15 @@
             </div>
         </div>
         <div class="container">
-            <div class="contact-form" data-uk-scrollspy="cls:uk-animation-slide-bottom;repeat:true">
-                <form action="#">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
-                    <input type="text" placeholder="Subject">
-                    <textarea  cols="30" rows="5" placeholder="Message"></textarea>
-                    <button class="btn contact-btn">Send Message</button>
-                </form>
-            </div>
+          <div class="contact-form" data-uk-scrollspy="cls:uk-animation-slide-bottom;repeat:true">
+            <form action="#">
+               <input type="text" placeholder="Name">
+               <input type="email" placeholder="Email">
+               <input type="text" placeholder="Sbuject">
+               <textarea id="" cols="30" rows="10" placeholder="Message"></textarea>
+               <button class="btn contact-btn">Send Message</button>
+            </form>
+          </div>
         </div>
     </section>
     <!-- Contact  section  end-->

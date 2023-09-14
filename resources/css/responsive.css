@@ -1,0 +1,342 @@
+
+@media screen and (max-width:1024px){
+    #hero{
+          width: 100%;
+         height: auto;
+     }
+     .logo{
+       padding: 1rem;
+     }
+     .logo a{
+        font-size: 3.8rem;
+     }
+     .menu{
+        display: none;
+     }
+     .ham-menu{
+        display: block;
+     }
+     
+     .hero-grid-item{
+        padding: 0;
+     }
+     html{
+        font-size: 55%;
+     }
+     .hero-social-content{
+        height: auto;
+     }
+     .social-content{
+        width: 50%;
+        margin-left: 0;
+        padding: 1rem;
+     }
+     .social-content h3 {
+        margin: 1rem 4rem;
+    }
+    .social-content p{
+        margin: 0 4rem; 
+     }
+     .hero-social-icon{
+        margin-left: 0;
+     }
+     .hero-social-icon ul li{
+        margin: 2rem 1rem;
+     }
+     .client-section{
+      width: 100%;
+      height: auto;
+   } 
+   .client-section-title{
+      padding-top: 4rem;
+   }
+   .client-section-title h2{
+      font-size: 2.6rem;
+   }
+   
+   .client-grid-content{
+      margin: 0;
+      padding: 0;
+    }
+    .client-grid-item{
+     width:80%;
+    }
+    .client-grid-item:nth-child(1){
+      margin-left: 6rem;
+    }
+    .client-grid-item:nth-child(2){
+      
+      margin-left: 3rem;
+    }
+    .client-grid-item:nth-child(3){
+      
+      margin-right: 6rem;
+      
+    }
+   .message-box{
+     width: 100%;
+      margin-bottom: 4rem;
+   }
+}
+
+@media screen and (max-width:768px){
+    #hero{
+        width: 100%;
+        height:auto;   
+    }
+    html{
+        font-size: 45%;
+    }
+    .hero-grid{
+        padding: 4rem;
+    }
+    .pricing-grid{
+        width: 100%;
+        gap: 1rem;
+        padding: 2rem;
+    }
+    .pricing-grid-item table{
+        width: 100%;  
+    }
+    .contact-btn{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px){
+    #hero{
+        width: 100%;
+        height:auto;   
+    }
+    .hero-grid{
+       grid-template-columns: 1fr;
+       width: 100%;
+       height: auto;
+    }
+    .hero-grid-item{
+        padding: 1rem 1rem;
+        width: 100%;
+        text-align: center;
+     }
+     .hero-title{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+     }
+     .hero-title h1{
+        font-size: 3.8rem;
+        padding: 0;
+     }
+     .hero-title h2{
+         font-size: 2rem;
+         margin: 0;
+     }
+     .hero-title h2::after{
+        width: 6rem;
+        display: block;
+        margin: auto;
+        margin-top: 1rem;
+      }
+      .hero-content{
+        width: 100%;
+        margin-left: 0;
+      }
+      .little-description{
+        color:#000;
+        font-size: 1.6rem;
+        padding:1rem 5.5rem;
+      }
+      .hero-form{
+        width: 100%;
+        margin: 0;
+     }
+     .hero-social-content{
+        width: 100%;
+        height: auto;
+        text-align: center;
+     }
+     .social-content{
+        width: 100%;
+     }
+     .hero-social-icon{
+        width: 100%;
+     }
+     .effect-grid{
+        grid-template-columns: 1fr;
+        gap:1rem; 
+     }
+     .tab{
+        width: 100%;
+        margin: 0;
+        padding: 0 2rem;
+        text-align: center;
+     }
+     .tabbtn{
+        display:inline-block;
+        width:30%;
+     }
+     .transition-effect-content{
+        width: 100%;
+        text-align: center;
+    }
+    .tabcontent{
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 3rem; 
+      }
+      .effect-content{
+        width: 100%;
+      }
+    .effect-content h3{
+        font-size: 2rem;
+      }
+    .efectImg{
+        width: 100%;
+        
+    }
+    .list-section{
+        width: 100%;
+        padding: 0;
+     }
+     .list-grid{
+        grid-template-columns: 1fr;
+        
+     }
+     .standard-picture-section{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        height: auto; 
+     }
+     .standard-grid{
+        grid-template-columns: 1fr; 
+     }
+     .standard-section-title{
+        padding: 1rem 0;
+        
+     }
+     .standard-section-title h3::after{
+        margin:auto;
+        margin-top: 1rem;
+     }
+     .standard-section-title p{
+        padding: 0 2rem;
+     }
+     .standard-picture{
+        padding: 6rem 0;
+     }
+     .awesome-section{
+        width: 100%;
+        overflow: hidden;
+     }
+     .awesome-grid{
+        grid-template-columns:1fr ;
+     }
+     .awesome-grid-item{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+     }
+     .awesome-grid-item:first-child
+        {
+            margin-left: 0;
+        }
+    .awesome-content p{
+       padding: 0 8rem; 
+    }
+    .pricing-section{
+       width: 100%;
+       padding: 0;
+       margin: 0;
+       display: block;
+     }
+     .pricing-section-title{
+        padding-top:4rem;
+     }
+     .pricing-grid{
+        grid-template-columns:1fr;
+        margin: 0 auto;
+        width: 100%;
+        gap:1rem;
+     }
+     .pricing-grid-item{
+        width: 100%;
+        padding:2rem 10rem;
+        margin: auto;
+     }
+     .pricing-grid-item table{
+        width: 100%;
+     }
+     .price-section{
+        margin-bottom: 2rem;
+     }
+     .hetr{
+        padding: 1rem; 
+     }
+     .price{
+        height: 20rem;
+     }
+     .client-section{
+        width: 100%;
+        padding: 0;
+     }
+     .client-section-title{
+        padding-top: 4rem;
+     }
+     .client-section-title h2{
+        font-size: 2.6rem;
+     }
+     .client-grid{
+        grid-template-columns:1fr;
+        gap:1rem;
+        width: 100%;
+        margin: 6rem auto; 
+     }
+     .client-grid-item{
+      margin-bottom: 6rem 6rem;
+     }
+     .client-grid-item:nth-child(1){
+      margin-left: 6rem;
+    }
+    .client-grid-item:nth-child(2){
+      margin-left: 6rem;
+    }
+    .client-grid-item:nth-child(3){
+      margin-left: 6rem;
+    }
+     .message-box{
+        width: 80%;
+        margin: auto;
+     }
+     .client-content{
+        width: 80%;
+        margin: auto;
+     }
+     .role h4{
+        margin: 0;
+     }
+     .stylish{
+        width: 100%;
+        text-align: center;
+        padding: 4rem 0;
+     }
+     .style-title{
+        padding: 0 8rem;
+     }
+     .style-title h2{
+        font-size: 2.6rem;
+     }
+     .contact-section{
+        width: 100%;
+        padding: 0;
+     }
+     .section-title{
+        padding-top: 4rem;
+     }
+     .section-title h2{
+        font-size: 2.6rem;
+     }
+     .contact-form{
+        width: 100%;
+        margin-bottom: 4rem;
+     }
+}
