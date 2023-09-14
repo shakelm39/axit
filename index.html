@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="EN">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,7 @@
 <body>
     <!-- header section start  -->
     <header id="hero">
-        <nav uk-sticky="offset: 0">
+        <nav data-uk-sticky="offset: 0">
             <div class="logo">
                 <a href="">Ax<span>it</span></a>
             </div>
@@ -285,7 +285,9 @@
             <div class="pricing-grid">
                 <div class="pricing-grid-item">
                     <table>
-                        <th>Basic</th>
+                        <tr>
+                            <th>Basic</th>
+                        </tr>
                         <tr>
                             <td class="price">
                                 <div class="price-section">
@@ -320,7 +322,9 @@
                 </div>
                 <div class="pricing-grid-item">
                     <table>
-                        <th>Professional</th>
+                        <tr>
+                            <th>Professional</th>
+                        </tr>
                         <tr>
                             <td class="price">
                                 <div class="price-section">
@@ -356,7 +360,9 @@
                 </div>
                 <div class="pricing-grid-item">
                     <table>
-                        <th>Enterprice</th>
+                        <tr>
+                            <th>Enterprice</th>
+                        </tr>
                         <tr>
                             <td class="price">
                                 <div class="price-section">
@@ -499,7 +505,7 @@
                <input type="text" placeholder="Name">
                <input type="email" placeholder="Email">
                <input type="text" placeholder="Sbuject">
-               <textarea id="" cols="30" rows="10" placeholder="Message"></textarea>
+               <textarea cols="30" rows="10" placeholder="Message"></textarea>
                <button class="btn contact-btn">Send Message</button>
             </form>
           </div>
@@ -509,25 +515,20 @@
     <!-- Footer  section  start-->
     <footer class="footer-section">
         <div class="footer-icon">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-            <li><a href="#"><i class="fa fa-google"></i></a></li>
-            <li><a href="#"><i class="fa fa-printerest"></i></a></li>
+            <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a href="#"><i class="fa fa-google"></i></a></li>
+                <li><a href="#"><i class="fa fa-printerest"></i></a></li>
+            </ul>
         </div>
         <div class="copyright">
-          <P>&copy; 2023 | Allrights reserved by Shakel</P>  
+          <P>&copy;2023 | Allrights reserved by Shakel</P>  
         </div>
     </footer>
     <!-- Footer  section  end-->
-
-
-
-
-
-
-
 
     <!-- js script  -->
     <!-- jquery  -->
@@ -537,7 +538,8 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.26/dist/js/uikit-icons.min.js"></script>
     <!-- main js  -->
     <script src="resources/js/main.js"></script>
-
-    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-SFFXX270R6"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-SFFXX270R6'); </script>
+    <!-- Google tag (gtag.js) --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SFFXX270R6">
+    </script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-SFFXX270R6'); </script>
 </body>
 </html>
